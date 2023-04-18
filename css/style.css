@@ -1,0 +1,14 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    font-size: 18px;
+    --fon-color: #252237;
+    --orange: #E2521D;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
