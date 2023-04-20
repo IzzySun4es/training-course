@@ -235,6 +235,7 @@ hr{
 footer{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .content-footer ul li{
     list-style: none;
