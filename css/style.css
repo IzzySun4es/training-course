@@ -89,6 +89,9 @@ main::before {
 .right-1{
     width: 572px;
 }
+.left-1 img{
+    max-width: 100%;
+}
 .right-1 h3{
     text-align: left;
 }
@@ -123,6 +126,7 @@ main::before {
     flex-wrap: wrap;
     justify-content: left;
     margin-top: 70px;
+    max-width: 100%;
 }
 .content-plan p{
     margin-top: 25px;
@@ -173,12 +177,58 @@ main::before {
 .passing{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 43px 0 92px 0;
 }
+
 .content-passing{
-    width: 412px;
+    width: 470px;
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+}
+.content-passing h5{
+    margin: 30px 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.content-passing p{
+    line-height: 34px;
+    color: var(--secondary-color);
+}
+.sign-up-2{
+    background-color: var(--orange);
+    width: 1073px;
+    height: 177px;
+    max-width: 100%;
+    color: white;
+    border: none;
+    margin-bottom: 35px;
+}
+.sign-up-2 h4{
+    line-height: 22px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.sign-up-2 p{
+    line-height: 34px;
+    margin-top: 15px;
+}
+hr{
+    border: 1px solid var(--secondary-color);
+    margin: 66px 0 23px 0;
+}
+.section-6 h4{
+    font-size: 1.1rem;
+    line-height: 140%;
+    font-weight: 800;
+    text-align: center;
+}
+.section-6 p{
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 36px 0 30px 0;
 }
