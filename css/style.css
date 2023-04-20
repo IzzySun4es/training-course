@@ -232,3 +232,26 @@ hr{
     text-align: center;
     margin: 36px 0 30px 0;
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.content-footer ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.content-footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.content-footer p{
+    font-size: 0.8rem;
+}
+.foot-ul{
+    display: flex;
+    margin: 11px 0;
+}
+.foot-ul li{
+    margin-right: 25px;
+}
