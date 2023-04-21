@@ -121,11 +121,13 @@ main::before {
     justify-content: space-around;
 }
 .content-plan{
-    width: 412px;
+    width: 360px;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    
+    align-content: flex-start;
     margin-top: 70px;
     max-width: 100%;
 }
@@ -373,6 +375,7 @@ footer{
 }
 .foot-ul{
     display: flex;
+    flex-wrap: wrap;
     margin: 11px 0;
 }
 .foot-ul li{
@@ -382,4 +385,12 @@ footer{
     font-size: 0.7rem;
     line-height: 140%;
     padding: 0;
+}
+@media screen and (max-width: 340px){
+    :root{
+        font-size: 14px;
+    }
+    .content-plan{
+        width: 100%;
+    }
 }
