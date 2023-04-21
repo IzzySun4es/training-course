@@ -8,6 +8,7 @@ body{
     --fon-color: #252237;
     --orange: #E2521D;
     --secondary-color: #8997AB;
+    --list-color: #0E1B28;
 }
 *{
     font-family: 'Montserrat', sans-serif;
@@ -133,6 +134,53 @@ main::before {
     line-height: 34px;
     font-weight: 500;
 }
+details li{
+    list-style: none;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+details ul{
+    margin: 30px 0 45px 100px;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+    padding: 25px 0 25px 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: var(--list-color);
+}
+  summary:after {  
+    content: url('../img/cross.png');
+    margin-left: .3em;
+    display: inline-block;
+    transition: transform .5s;
+    margin-right: 97px;
+    transform: rotate(-45deg);
+  }
+
+  details[open] > summary:after {
+    transform: rotate(0deg);
+    content: url('../img/cross.png');
+  }
+  summary:focus {
+    outline:0;
+    background: var(--orange);
+    text-transform: uppercase;
+  }
+  details[open] summary ~ *{ 
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+  }
 .section-4{
     margin-bottom: 100px;
 }
