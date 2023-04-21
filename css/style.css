@@ -134,6 +134,9 @@ main::before {
     line-height: 34px;
     font-weight: 500;
 }
+.course-program{
+    margin: 75px 0 111px 0;
+}
 details li{
     list-style: none;
     font-size: 1rem;
