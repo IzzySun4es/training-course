@@ -88,7 +88,7 @@ main::before {
     justify-content: space-between;
 }
 .right-1{
-    width: 572px;
+    max-width: 572px;
 }
 .left-1 img{
     max-width: 100%;
@@ -196,7 +196,7 @@ summary {
     align-items: flex-end;
 }
 .content-for h5{
-    width:  572px;
+    max-width:  572px;
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 52px;
@@ -204,7 +204,7 @@ summary {
     margin: 164px 0 50px 0;
 }
 .content-for p{
-    width:  572px;
+    max-width:  572px;
     line-height: 34px;
     color: var(--secondary-color);
 }
@@ -386,11 +386,40 @@ footer{
     line-height: 140%;
     padding: 0;
 }
-@media screen and (max-width: 340px){
+@media screen and (max-width: 500px){
     :root{
         font-size: 14px;
     }
+    header{
+        max-width: 90%;
+    }
     .content-plan{
         width: 100%;
+    }
+    .checkbox{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 1182px){
+    .container{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 1134px){
+    .section-1{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .right-1{
+        max-width: 100%;
+    }
+    .left-1 img{
+        margin-top: 70px;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
