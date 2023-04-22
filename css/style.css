@@ -401,6 +401,17 @@ footer{
         flex-direction: column;
         align-content: center;
     }
+    main::before{
+        background-position: -100px center;
+    }
+    .section-4::before {
+        width: 755px;
+        height: 1570.37px;
+        background-position: 16px center;
+    }
+    .section-4 {
+        margin-bottom: 320px;
+    }
 }
 @media screen and (max-width: 1182px){
     .container{
