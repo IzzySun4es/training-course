@@ -434,6 +434,7 @@ footer{
     summary::after{
         margin-right: 30px;
     }
+    
 }
 @media screen and (max-width: 1182px){
     .container{
