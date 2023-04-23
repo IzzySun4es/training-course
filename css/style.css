@@ -428,6 +428,12 @@ footer{
     .section-4 {
         margin-bottom: 70px;
     }
+    summary{
+        padding-left: 30px;
+    }
+    summary::after{
+        margin-right: 30px;
+    }
 }
 @media screen and (max-width: 1182px){
     .container{
