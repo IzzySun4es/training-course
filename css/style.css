@@ -386,6 +386,24 @@ footer{
     line-height: 140%;
     padding: 0;
 }
+.section-4-img img{
+    display: none;
+}
+@media screen and (max-width: 400px){
+    .section-4-img{
+        width: 280px;
+        height: 330px;
+        overflow: hidden;
+    }
+    .section-4-img img{
+        display: flex;
+        width: 500px;
+        height: 300px;
+    }
+    .section-4::before{
+        display: none;
+    }
+}
 @media screen and (max-width: 500px){
     :root{
         font-size: 14px;
@@ -396,6 +414,9 @@ footer{
     .content-plan{
         width: 100%;
     }
+    .content-for h5{
+        margin: 70px 0 25px 0;
+    }
     .checkbox{
         justify-content: flex-start;
         flex-direction: column;
@@ -404,13 +425,8 @@ footer{
     main::before{
         background-position: -100px center;
     }
-    .section-4::before {
-        width: 755px;
-        height: 1570.37px;
-        background-position: 16px center;
-    }
     .section-4 {
-        margin-bottom: 320px;
+        margin-bottom: 70px;
     }
 }
 @media screen and (max-width: 1182px){
