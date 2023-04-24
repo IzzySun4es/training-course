@@ -79,7 +79,6 @@ main::before {
     transform: translateX(-50%);
     
     z-index: -1;
-    
 }
 .section-1{
     margin-top: 180px;
